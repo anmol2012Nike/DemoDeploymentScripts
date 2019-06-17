@@ -8,6 +8,7 @@
 			stage('Build'){
 				steps{
 					echo 'build stage'
+					sh 'mvn clean compile'
 				}
 					
 				
