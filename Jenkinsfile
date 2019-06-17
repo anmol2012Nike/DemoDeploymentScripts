@@ -5,7 +5,7 @@
 		
 		stages{
 			
-			stage("Build"){
+			stage('Build'){
 				steps{
 					echo 'build stage'
 					bat 'mvn clean package'
@@ -18,7 +18,7 @@
 				}
 				
 			}
-			stage("Deployments"){
+			stage('Deployments'){
 				steps {
 					echo 'deploying to staging'
 					
